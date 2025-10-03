@@ -1,0 +1,14 @@
+const getting = (req,res)=>{
+    res.send("Fetch All Users")
+}
+const adding = (req,res)=>{
+    res.send(" Add a new user.")
+} 
+
+const fetching = (req,res)=>{
+    id = req.params.id
+    res.send(`Fetch a user by their ID ${id}`)
+}
+
+
+module.exports = {adding,fetching,getting}

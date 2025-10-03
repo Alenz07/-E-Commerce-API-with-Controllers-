@@ -1,0 +1,10 @@
+const fetching = (req,res)=>{
+    userid= req.params.userid
+    res.send(`Fetching cart for user with ID: ${userid}`)
+    }
+
+const adding  =  (req,res)=>{
+    userid= req.params.userid
+    res.send(`Adding product to cart for user with ID: ${userid}`)
+    }
+    module.exports  = {fetching,adding}
