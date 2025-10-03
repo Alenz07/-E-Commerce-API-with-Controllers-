@@ -1,0 +1,11 @@
+const fetching = (req,res)=>{
+    res.send("Fetch All Products")
+}
+const adding = (req,res)=>{
+    res.send(" Add a new product.")
+}
+const getting = (req,res)=>{
+    id = req.params.id
+    res.send(`Fetch a product by their ID ${id}`)
+}
+module.exports = {fetching,adding,getting}
